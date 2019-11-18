@@ -1,15 +1,10 @@
-using App;
-using System;
-
 namespace App.KissConfig.Configs
 {
-    class FrameShopConfig : IConfig
+    class FrameShopConfig : AConfig
     {
-        public readonly string FileName = "gift_collections.config.php";
-
-        public FrameShopConfig()
+        public FrameShopConfig() :base("gift_collections.config.php")
         {
-            Console.WriteLine(this.FileName);
+
         }
     }
 }

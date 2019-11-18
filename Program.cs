@@ -10,12 +10,6 @@ namespace configs
     {
         static void Main(string[] args)
         {
-            ConfigsEnum ce = new ConfigsEnum();
-            ce.GetInstance(ce.Configs.FrameShopConfig);
-            ce.GetInstance(0);
-            ce.GetInstance(0);
-            ce.GetInstance(0);
-            ce.GetInstance(0);
             
         }
     }

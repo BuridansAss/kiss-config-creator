@@ -2,6 +2,6 @@ namespace App.Abstractions
 {
     interface IFactory
     {
-        public IProduct create();
+        public IProduct Create(int number = 0);
     }
 }
