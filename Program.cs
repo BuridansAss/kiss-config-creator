@@ -1,5 +1,8 @@
 ﻿using System;
 using App;
+using App.Abstractions;
+using App.KissConfig;
+using App.KissConfig.Configs;
 
 namespace configs
 {
@@ -7,9 +10,13 @@ namespace configs
     {
         static void Main(string[] args)
         {
-            string path = Console.ReadLine();
-
-            ConfigFile.Create(path);
+            ConfigsEnum ce = new ConfigsEnum();
+            ce.GetInstance(ce.Configs.FrameShopConfig);
+            ce.GetInstance(0);
+            ce.GetInstance(0);
+            ce.GetInstance(0);
+            ce.GetInstance(0);
+            
         }
     }
 }
